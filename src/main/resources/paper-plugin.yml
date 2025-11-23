@@ -4,3 +4,4 @@ api-version: "1.21"
 main: cancelcloud.ReplenishPlugin
 bootstrapper: cancelcloud.enchantment.replenish.ReplenishBootstrap
 description: "Custom Replenish enchantment für automatisches Neupflanzen von Pflanzen"
+website: "https://github.com/cancel-cloud/Replenish-Enchant"
