@@ -1,7 +1,13 @@
 name: ReplenishPlugin
 version: ${version}
-api-version: "1.21"
+api-version: "26.3"
 main: cancelcloud.ReplenishPlugin
 bootstrapper: cancelcloud.enchantment.replenish.ReplenishBootstrap
-description: "Custom Replenish enchantment für automatisches Neupflanzen von Pflanzen"
+description: "Hoe enchantment that replants crops when you harvest them"
 website: "https://github.com/cancel-cloud/Replenish-Enchant"
+dependencies:
+  server:
+    MCKotlin-Paper:
+      load: BEFORE
+      required: true
+      join-classpath: true

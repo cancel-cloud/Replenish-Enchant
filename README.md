@@ -1,42 +1,50 @@
 # ReplenishEnchant
 
-**ReplenishEnchant** is a lightweight, custom enchantment plugin for Paper servers that streamlines farming by automatically replanting crops upon harvest.
+**ReplenishEnchant** is a lightweight hoe enchantment for Paper and Purpur. Harvest a full crop and the same spot is replanted.
 
-## ✨ Features
+## Features
 
-- **Automatic Replanting**: Automatically replants fully grown crops when harvested with a Replenish-enchanted hoe.
-- **Supported Crops**:
-  - 🌾 Wheat
-  - 🥕 Carrots
-  - 🥔 Potatoes
-  - 🍠 Beetroots
-  - 🍄 Nether Wart
-  - 🫐 Sweet Berry Bushes
-- **Visual Feedback**: Spawns "Happy Villager" particles 🌱 to indicate successful replanting.
-- **Creative Mode Safety**: Prevents accidental usage in Creative mode with a helpful action bar notification.
-- **Durability Support**: Fully supports `Unbreaking` and `Mending` enchantments (standard durability mechanics apply).
+- Replants fully grown crops harvested with a Replenish hoe.
+- Crops: wheat, carrots, potatoes, beetroots, nether wart, sweet berry bushes.
+- Happy Villager particles on a successful replant.
+- Creative mode does not replant.
+- The hoe takes durability. Unbreaking and Mending still apply.
+- Combines with Mending, Efficiency, Unbreaking, and Fortune.
 
-## 🛠️ Installation
+## Installation
 
-1.  Download the `ReplenishEnchant.jar` file.
-2.  Place it into your server's `plugins` folder.
-3.  Restart your server.
+Requires **Java 25** and **Paper or Purpur 26.3**.
 
-## 📖 Usage
+1. Install [MCKotlin-Paper](https://modrinth.com/plugin/mckotlin) `1.5.1-k2.4.20` or newer.
+2. Download `ReplenishEnchant-1.0.jar`.
+3. Put both jars in `plugins/`.
+4. Restart the server.
 
-1.  Obtain a Hoe with the **Replenish** enchantment.
-2.  Harvest any fully grown supported crop.
-3.  The crop will be harvested, items will drop, and a new seed will be automatically planted!
+## Where to get it
 
-> **Note**: The enchantment only works on **Main Hand** items and specifically on **Hoes**.
+Replenish is level 1, hoes only, main hand. It is not crafted, and it does not show up in chests or on mob gear.
 
-## ⚙️ Technical Details
+**Enchanting table.** Weight 5, the same as Unbreaking. Efficiency is 10, Fortune is 2, Silk Touch is 1. The cost window is 5–55, so a few bookshelves is enough and a full table still rolls it. On a stocked table, when those hoe enchantments are all eligible, Replenish is about **1 in 5** of the offered enchantment.
 
-- **Enchantment Name**: `replenish`
-- **Max Level**: 1
-- **Anvil Cost**: 1
-- **Identifier**: `replenishplugin:replenish`
+**Librarians.** It is in the normal tradeable book pool, not the treasure pool, so it does not get Mending's doubled price. Each enchanted-book offer is **1 in 41** (~2.4%). A master librarian has about a **6%** chance that one of their offers is Replenish. The book costs **5–19 emeralds** plus one book. Villagers who already rolled their trades keep the old offers. Employ a new librarian after installing.
 
----
+**Anvil.** Anvil cost is 1, so an existing book or hoe can be combined onto another hoe.
 
-_Built for Paper 1.21+_
+## Usage
+
+1. Get a hoe with Replenish.
+2. Harvest a fully grown supported crop.
+3. The crop drops, and the same spot is replanted.
+
+Immature crops are not broken.
+
+## Technical details
+
+- **Id**: `replenishplugin:replenish`
+- **Max level**: 1
+- **Weight**: 5
+- **Enchanting cost**: 5–55
+- **Anvil cost**: 1
+- **Tags**: `#minecraft:in_enchanting_table`, `#minecraft:tradeable`
+
+Built for Paper and Purpur 26.3. License: MIT.
